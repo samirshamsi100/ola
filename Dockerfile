@@ -11,4 +11,4 @@ COPY pom.xml $HOME
 
 RUN $MAVEN_HOME/bin/mvn package
 #RUN /usr/local/s2i/run
-ADD target/*.jar /deployments/
+COPY $HOME/target/*.jar /deployments/
