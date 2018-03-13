@@ -12,4 +12,4 @@ COPY pom.xml $HOME
 RUN $MAVEN_HOME/bin/mvn clean package
 #RUN /usr/local/s2i/run
 
-ADD arget/ola.jar /deployments/
+ADD target/ola.jar /deployments/
