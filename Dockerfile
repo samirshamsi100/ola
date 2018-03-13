@@ -1,4 +1,4 @@
-FROM fabric8/java-jboss-openjdk8-jdk:1.3.1
+FROM openshift/redhat-openjdk18-openshift:1.2
 
 ENV JAVA_APP_JAR ola.jar
 ENV AB_ENABLED off
