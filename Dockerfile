@@ -5,12 +5,7 @@ ENV AB_ENABLED off
 ENV AB_JOLOKIA_AUTH_OPENSHIFT true
 ENV JAVA_OPTIONS -Xmx256m -Djava.security.egd=file:///dev/./urandom
 ENV MAVEN_HOME /opt/rh/rh-maven33/root/usr/share/maven
-ENV LOCAL_SOURCE_DIR $HOME/ola/
 EXPOSE 8080
-
-USER 1001
-RUN echo ls
-RUN mkdir -p $LOCAL_SOURCE_DIR
 
 WORKDIR $HOME/src
 
