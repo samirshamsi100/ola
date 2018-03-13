@@ -32,7 +32,6 @@
 		<version>1.4.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-
 	<properties>
 		<!-- Explicitly declaring the source encoding eliminates the following
 			message: -->
