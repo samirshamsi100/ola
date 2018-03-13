@@ -10,6 +10,6 @@ EXPOSE 8080
 
 USER 1001
 
-RUN mvn package
+RUN $MAVEN_HOME/bin/mvn package
 
 ADD target/ola.jar /deployments/
