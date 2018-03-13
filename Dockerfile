@@ -9,10 +9,10 @@ ENV LOCAL_SOURCE_DIR $HOME/ola/
 EXPOSE 8080
 
 USER 1001
-RUN ls
+RUN echo ls
 RUN mkdir -p $LOCAL_SOURCE_DIR
 
-WORKDIR $LOCAL_SOURCE_DIR 
+WORKDIR $HOME/src
 
 RUN $MAVEN_HOME/bin/mvn package
 #RUN /usr/local/s2i/run
