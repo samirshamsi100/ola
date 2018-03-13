@@ -7,4 +7,6 @@ ENV JAVA_OPTIONS -Xmx256m -Djava.security.egd=file:///dev/./urandom
 
 EXPOSE 8080
 
+USER 1001
+
 ADD target/ola.jar /deployments/
