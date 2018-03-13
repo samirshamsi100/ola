@@ -9,4 +9,6 @@ EXPOSE 8080
 
 USER 1001
 
+RUN mvn clean install
+
 ADD target/ola.jar /deployments/
