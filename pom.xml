@@ -161,8 +161,8 @@
 					    <goals>
 						<goal>repackage</goal>
 					    </goals>
-			           </execution>
-    </executions>
+			               </execution>
+    				  </executions>
 			</plugin>
 			<plugin>
 				<groupId>io.fabric8</groupId>
