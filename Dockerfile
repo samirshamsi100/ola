@@ -9,7 +9,7 @@ EXPOSE 8080
 
 COPY pom.xml $HOME
 
-RUN $MAVEN_HOME/bin/mvn package
+RUN $MAVEN_HOME/bin/mvn clean package
 #RUN /usr/local/s2i/run
 
 ADD $HOME/target/ola.jar /deployments/
