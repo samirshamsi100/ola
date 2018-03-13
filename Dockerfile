@@ -7,7 +7,7 @@ ENV JAVA_OPTIONS -Xmx256m -Djava.security.egd=file:///dev/./urandom
 ENV MAVEN_HOME /opt/rh/rh-maven33/root/usr/share/maven
 EXPOSE 8080
 
-WORKDIR $HOME/src
+COPY pom.xml $HOME
 
 RUN $MAVEN_HOME/bin/mvn package
 #RUN /usr/local/s2i/run
