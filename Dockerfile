@@ -11,4 +11,4 @@ COPY pom.xml $HOME
 
 RUN $MAVEN_HOME/bin/mvn package
 #RUN /usr/local/s2i/run
-ADD target/ola*.jar /deployments/
+ADD target/*.jar /deployments/
