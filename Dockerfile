@@ -8,7 +8,7 @@ ENV MAVEN_HOME /opt/rh/rh-maven33/root/usr/share/maven
 EXPOSE 8080
 
 COPY pom.xml $HOME
-
+COPY ./src $HOME
 RUN $MAVEN_HOME/bin/mvn clean package
 #RUN /usr/local/s2i/run
 
