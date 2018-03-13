@@ -156,9 +156,6 @@
 			   	<configuration>
 					<mainClass>com.redhat.developers.msa.ola.OlaApplication</mainClass>
 				   	<layout>ZIP</layout>
-					<includes>
-						<include>src/main/java/**/*.java</include>
-        				</includes>
 			   	</configuration>
 			</plugin>
 			<plugin>
