@@ -153,13 +153,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				   <executions>
-					<execution>
-					    <goals>
-						<goal>repackage</goal>
-					    </goals>
-			               </execution>
-    				  </executions>
+				   <configuration>
+        				<mainClass>com.redhat.developers.msa.ola.OlaApplication</mainClass>
+    			           </configuration>
 			</plugin>
 			<plugin>
 				<groupId>io.fabric8</groupId>
