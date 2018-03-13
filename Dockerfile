@@ -8,7 +8,11 @@ ENV MAVEN_HOME /opt/rh/rh-maven33/root/usr/share/maven
 EXPOSE 8080
 
 COPY pom.xml $HOME
-
+RUN for file in $HOME/target/*; do echo ${file##*/} done
+RUN for file in $HOME/*; do echo ${file##*/} done
 RUN $MAVEN_HOME/bin/mvn package
 #RUN /usr/local/s2i/run
+RUN echo $(basename $HOME)
+RUN echo $(basename $HOME/target)
+
 COPY $HOME/target/*.jar /deployments/
