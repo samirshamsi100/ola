@@ -9,8 +9,8 @@ EXPOSE 8080
 
 COPY pom.xml $HOME
 
-echo $(basename $HOME)
-echo $(basename $HOME/target)
+CMD echo $(basename $HOME)
+CMD echo $(basename $HOME/target)
 
 RUN $MAVEN_HOME/bin/mvn package
 #RUN /usr/local/s2i/run
