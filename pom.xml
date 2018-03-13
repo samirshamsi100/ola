@@ -26,12 +26,12 @@
 	<name>ola</name>
 	<description>Demo project for Spring Boot</description>
 
-	<parent>
+<!--	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.4.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
+		<relativePath /> 
+	</parent> -->
 	<properties>
 		<!-- Explicitly declaring the source encoding eliminates the following
 			message: -->
